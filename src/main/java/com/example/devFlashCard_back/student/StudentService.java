@@ -11,12 +11,12 @@ public class StudentService {
     public List<Student> getStudents() {
         return List.of(
                 new Student(
-                        1L,
-                        "myriam",
-                        "myriam@mail.com",
-                        LocalDate.of(2000, Month.JANUARY, 14),
-                        21
-                )
+                1L,
+                "myriam",
+                "myriam@mail.com",
+                LocalDate.of(2000, Month.JANUARY, 14),
+                21
+        )
         );
     }
 }
