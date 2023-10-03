@@ -15,10 +15,14 @@ public class UserController {
 
     @Autowired
     public UserController(UserService userService){
+
         this.userService = userService;
     }
+
+    // Endpoint to retrieve all users
     @GetMapping
     public List<User> getUser () {
+
         return userService.getUsers();
     }
 }

@@ -18,10 +18,11 @@ public class QuestionCardController {
     public QuestionCardController(QuestionCardService questionCardService){
         this.questionCardService = questionCardService;
     }
+
+    // Endpoint to retrieve all question cards
     @GetMapping
     public List<QuestionCard> getQuestionCards () {
 
         return questionCardService.getQuestionCards();
     }
-
 }
